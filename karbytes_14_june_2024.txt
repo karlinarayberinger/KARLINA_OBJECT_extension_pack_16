@@ -21,3 +21,9 @@ karbytes_1: "Yes. I am suggesting that Nature wants whatever is in it to exist e
 karbytes_0: "Are you suggesting that pure nothingness has any degree of sentience or intelligence?"
 
 karbytes_1: "Yes. I am suggesting that pure nothingness is the most unlimited 'state' of matter. This is obviously different than suggesting that pure nothingness is the complete absence of matter (because what I am suggesting is that all matter is fundamentally comprised of pure nothingness and that matter is a more definite and limited form of pure nothingness than is pure nothingness). Pure nothingness itself might have rudimentary consciousness (i.e. sentience) but I doubt that pure nothingness has much more than rudimentary awareness of existence itself without pure nothingness first instantiating sufficiently many information processing and information routing hardware components. Hence, I could say that Nature did not solve calculus problems until Nature instantiated physical information processing agents which are demonstratively competent at solving calculus problems."
+
+* * *
+
+karbytes_0: "What is the purpose of human existence?"
+
+karbytes_2: "The purpose of human existence is to make as many new humans as possible as quickly as possible (which necessitates that some relatively old humans be sacrificed in order to free up material resources which are necessary for sustaining human life) because those with the largest and most physically domineering communities have the most satisfaction out of all the humans."
