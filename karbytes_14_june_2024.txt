@@ -35,3 +35,5 @@ karbytes_2: "To some extent, I am suggesting that it is necessary and therefore 
 karbytes_0: "Are humans who become biological (or even adoptive) parents of human minors considered to be more worthy of being saved from dying or suffering than are humans who 'choose' to remain childless (especially as single and never married adults) by humans in general?"
 
 karbytes_2: "To tell you the truth, I only make up assumptions based on what I personally have access to knowing (and I have a penchant for being as reductionist as possible). Yes. In general, the answer to your question is yes. One implication of this suggestion is that human money is generally used for the purpose of furthering the military-industrial complex's ends and people who are not about sacrificing themselves in service to those ends are intentionally prevented by humans from having money (because money is materialized freedom)."
+
+karbytes_0: "Based on what you said, I would assume that you believe that the smallest unit of human civilization is a nation or tribe (physically manifested as a military-industrial complex in operation to sustain and grow itself)."
