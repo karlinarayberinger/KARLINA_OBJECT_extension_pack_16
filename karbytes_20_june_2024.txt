@@ -1,0 +1,424 @@
+/**
+ * file: karbytes_20_june_2024.txt
+ * type: plain-text
+ * date: 19_JUNE_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+// 1:30PM 19_JUNE_2024 (using ChatGPT-4o)
+
+karbytes
+
+Is the raw genome information on the following web page depicting all 23 of karbytes' genome? https://karbytesforlifeblog.wordpress.com/karbytes_23andme_ancestry_data/
+
+ChatGPT
+
+The web page does provide a link to karbytes' genome information, which is presented in a plain-text file. This file contains raw genome data from karbytes' 23andMe ancestry analysis. However, without inspecting the file itself, it's unclear if it includes all 23 pairs of chromosomes in full detail. You can review the genome data directly through the provided link.
+
+karbytes
+
+Describe the contents of the plain-text located at the following URL: https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt
+
+ChatGPT
+
+The plain-text file contains raw genome data from karbytes' 23andMe ancestry analysis. The data includes a list of single nucleotide polymorphisms (SNPs) identified by their rsID, chromosome number, position, and genotype. This file is a detailed genetic report used for personal genomic studies and ancestry insights. You can view the complete data here.
+
+karbytes
+
+Does that plain-text file depict exactly 23 discrete chromosomes?
+
+ChatGPT
+
+python
+
+Always show details
+
+import requests
+
+# Download the plain-text file and analyze its contents to determine the number of discrete chromosomes depicted
+url = "https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt"
+response = requests.get(url)
+genome_data = response.text
+
+# Split the data into lines and identify unique chromosomes
+lines = genome_data.split('\n')
+chromosomes = set()
+
+for line in lines:
+    if line and not line.startswith('#'):
+        parts = line.split()
+        if len(parts) > 1:
+            chromosome = parts[1]
+            chromosomes.add(chromosome)
+
+chromosome_list = sorted(chromosomes)
+chromosome_list
+
+---------------------------------------------------------------------------
+gaierror                                  Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:174, in HTTPConnection._new_conn(self)
+    173 try:
+--> 174     conn = connection.create_connection(
+    175         (self._dns_host, self.port), self.timeout, **extra_kw
+    176     )
+    178 except SocketTimeout:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/util/connection.py:72, in create_connection(address, timeout, source_address, socket_options)
+     68     return six.raise_from(
+     69         LocationParseError(u"'%s', label empty or too long" % host), None
+     70     )
+---> 72 for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+     73     af, socktype, proto, canonname, sa = res
+
+File /usr/local/lib/python3.11/socket.py:962, in getaddrinfo(host, port, family, type, proto, flags)
+    961 addrlist = []
+--> 962 for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+    963     af, socktype, proto, canonname, sa = res
+
+gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+NewConnectionError                        Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:715, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    714 # Make the request on the httplib connection object.
+--> 715 httplib_response = self._make_request(
+    716     conn,
+    717     method,
+    718     url,
+    719     timeout=timeout_obj,
+    720     body=body,
+    721     headers=headers,
+    722     chunked=chunked,
+    723 )
+    725 # If we're going to release the connection in ``finally:``, then
+    726 # the response doesn't need to know about the connection. Otherwise
+    727 # it will also try to release it and we'll have a double-release
+    728 # mess.
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:404, in HTTPConnectionPool._make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    403 try:
+--> 404     self._validate_conn(conn)
+    405 except (SocketTimeout, BaseSSLError) as e:
+    406     # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:1058, in HTTPSConnectionPool._validate_conn(self, conn)
+   1057 if not getattr(conn, "sock", None):  # AppEngine might not have  `.sock`
+-> 1058     conn.connect()
+   1060 if not conn.is_verified:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:363, in HTTPSConnection.connect(self)
+    361 def connect(self):
+    362     # Add certificate verification
+--> 363     self.sock = conn = self._new_conn()
+    364     hostname = self.host
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:186, in HTTPConnection._new_conn(self)
+    185 except SocketError as e:
+--> 186     raise NewConnectionError(
+    187         self, "Failed to establish a new connection: %s" % e
+    188     )
+    190 return conn
+
+NewConnectionError: : Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+MaxRetryError                             Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/requests/adapters.py:486, in HTTPAdapter.send(self, request, stream, timeout, verify, cert, proxies)
+    485 try:
+--> 486     resp = conn.urlopen(
+    487         method=request.method,
+    488         url=url,
+    489         body=request.body,
+    490         headers=request.headers,
+    491         redirect=False,
+    492         assert_same_host=False,
+    493         preload_content=False,
+    494         decode_content=False,
+    495         retries=self.max_retries,
+    496         timeout=timeout,
+    497         chunked=chunked,
+    498     )
+    500 except (ProtocolError, OSError) as err:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:799, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    797     e = ProtocolError("Connection aborted.", e)
+--> 799 retries = retries.increment(
+    800     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    801 )
+    802 retries.sleep()
+
+File ~/.local/lib/python3.11/site-packages/urllib3/util/retry.py:592, in Retry.increment(self, method, url, response, error, _pool, _stacktrace)
+    591 if new_retry.is_exhausted():
+--> 592     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+    594 log.debug("Incremented Retry for (url='%s'): %r", url, new_retry)
+
+MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt (Caused by NewConnectionError(': Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+ConnectionError                           Traceback (most recent call last)
+Cell In[1], line 5
+      3 # Download the plain-text file and analyze its contents to determine the number of discrete chromosomes depicted
+      4 url = "https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt"
+----> 5 response = requests.get(url)
+      6 genome_data = response.text
+      8 # Split the data into lines and identify unique chromosomes
+
+File ~/.local/lib/python3.11/site-packages/requests/api.py:73, in get(url, params, **kwargs)
+     62 def get(url, params=None, **kwargs):
+     63     r"""Sends a GET request.
+     64 
+     65     :param url: URL for the new :class:`Request` object.
+   (...)
+     70     :rtype: requests.Response
+     71     """
+---> 73     return request("get", url, params=params, **kwargs)
+
+File ~/.local/lib/python3.11/site-packages/requests/api.py:59, in request(method, url, **kwargs)
+     55 # By using the 'with' statement we are sure the session is closed, thus we
+     56 # avoid leaving sockets open which can trigger a ResourceWarning in some
+     57 # cases, and look like a memory leak in others.
+     58 with sessions.Session() as session:
+---> 59     return session.request(method=method, url=url, **kwargs)
+
+File ~/.local/lib/python3.11/site-packages/requests/sessions.py:589, in Session.request(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)
+    584 send_kwargs = {
+    585     "timeout": timeout,
+    586     "allow_redirects": allow_redirects,
+    587 }
+    588 send_kwargs.update(settings)
+--> 589 resp = self.send(prep, **send_kwargs)
+    591 return resp
+
+File ~/.local/lib/python3.11/site-packages/requests/sessions.py:703, in Session.send(self, request, **kwargs)
+    700 start = preferred_clock()
+    702 # Send the request
+--> 703 r = adapter.send(request, **kwargs)
+    705 # Total elapsed time of the request (approximately)
+    706 elapsed = preferred_clock() - start
+
+File ~/.local/lib/python3.11/site-packages/requests/adapters.py:519, in HTTPAdapter.send(self, request, stream, timeout, verify, cert, proxies)
+    515     if isinstance(e.reason, _SSLError):
+    516         # This branch is for urllib3 v1.22 and later.
+    517         raise SSLError(e, request=request)
+--> 519     raise ConnectionError(e, request=request)
+    521 except ClosedPoolError as e:
+    522     raise ConnectionError(e, request=request)
+
+ConnectionError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt (Caused by NewConnectionError(': Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+It seems there was an issue retrieving the file. However, you can manually check for the number of discrete chromosomes by opening the file and counting the unique chromosome identifiers present in the data. Look for lines that specify chromosome numbers and see if there are exactly 23 unique entries, corresponding to the 23 pairs of human chromosomes.
+
+Here’s a brief outline on how you can do this manually:
+
+    Open the plain-text file in a text editor or a spreadsheet application.
+    Ignore any lines that start with a hash (#) as they are comments.
+    Focus on the second column which typically contains the chromosome number.
+    Count the unique chromosome numbers from 1 to 22 and also include X, Y, and possibly MT (mitochondrial DNA).
+
+This will help you determine if the file depicts all 23 discrete chromosomes.
+
+karbytes
+
+Can you do it?
+
+ChatGPT
+
+python
+
+Always show details
+
+# Attempt to download the plain-text file again and analyze its contents
+import requests
+
+url = "https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt"
+response = requests.get(url)
+genome_data = response.text
+
+# Split the data into lines and identify unique chromosomes
+lines = genome_data.split('\n')
+chromosomes = set()
+
+for line in lines:
+    if line and not line.startswith('#'):
+        parts = line.split()
+        if len(parts) > 1:
+            chromosome = parts[1]
+            chromosomes.add(chromosome)
+
+chromosome_list = sorted(chromosomes)
+chromosome_list
+
+---------------------------------------------------------------------------
+gaierror                                  Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:174, in HTTPConnection._new_conn(self)
+    173 try:
+--> 174     conn = connection.create_connection(
+    175         (self._dns_host, self.port), self.timeout, **extra_kw
+    176     )
+    178 except SocketTimeout:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/util/connection.py:72, in create_connection(address, timeout, source_address, socket_options)
+     68     return six.raise_from(
+     69         LocationParseError(u"'%s', label empty or too long" % host), None
+     70     )
+---> 72 for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+     73     af, socktype, proto, canonname, sa = res
+
+File /usr/local/lib/python3.11/socket.py:962, in getaddrinfo(host, port, family, type, proto, flags)
+    961 addrlist = []
+--> 962 for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+    963     af, socktype, proto, canonname, sa = res
+
+gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+NewConnectionError                        Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:715, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    714 # Make the request on the httplib connection object.
+--> 715 httplib_response = self._make_request(
+    716     conn,
+    717     method,
+    718     url,
+    719     timeout=timeout_obj,
+    720     body=body,
+    721     headers=headers,
+    722     chunked=chunked,
+    723 )
+    725 # If we're going to release the connection in ``finally:``, then
+    726 # the response doesn't need to know about the connection. Otherwise
+    727 # it will also try to release it and we'll have a double-release
+    728 # mess.
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:404, in HTTPConnectionPool._make_request(self, conn, method, url, timeout, chunked, **httplib_request_kw)
+    403 try:
+--> 404     self._validate_conn(conn)
+    405 except (SocketTimeout, BaseSSLError) as e:
+    406     # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:1058, in HTTPSConnectionPool._validate_conn(self, conn)
+   1057 if not getattr(conn, "sock", None):  # AppEngine might not have  `.sock`
+-> 1058     conn.connect()
+   1060 if not conn.is_verified:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:363, in HTTPSConnection.connect(self)
+    361 def connect(self):
+    362     # Add certificate verification
+--> 363     self.sock = conn = self._new_conn()
+    364     hostname = self.host
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connection.py:186, in HTTPConnection._new_conn(self)
+    185 except SocketError as e:
+--> 186     raise NewConnectionError(
+    187         self, "Failed to establish a new connection: %s" % e
+    188     )
+    190 return conn
+
+NewConnectionError: : Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+MaxRetryError                             Traceback (most recent call last)
+File ~/.local/lib/python3.11/site-packages/requests/adapters.py:486, in HTTPAdapter.send(self, request, stream, timeout, verify, cert, proxies)
+    485 try:
+--> 486     resp = conn.urlopen(
+    487         method=request.method,
+    488         url=url,
+    489         body=request.body,
+    490         headers=request.headers,
+    491         redirect=False,
+    492         assert_same_host=False,
+    493         preload_content=False,
+    494         decode_content=False,
+    495         retries=self.max_retries,
+    496         timeout=timeout,
+    497         chunked=chunked,
+    498     )
+    500 except (ProtocolError, OSError) as err:
+
+File ~/.local/lib/python3.11/site-packages/urllib3/connectionpool.py:799, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)
+    797     e = ProtocolError("Connection aborted.", e)
+--> 799 retries = retries.increment(
+    800     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+    801 )
+    802 retries.sleep()
+
+File ~/.local/lib/python3.11/site-packages/urllib3/util/retry.py:592, in Retry.increment(self, method, url, response, error, _pool, _stacktrace)
+    591 if new_retry.is_exhausted():
+--> 592     raise MaxRetryError(_pool, url, error or ResponseError(cause))
+    594 log.debug("Incremented Retry for (url='%s'): %r", url, new_retry)
+
+MaxRetryError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt (Caused by NewConnectionError(': Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+ConnectionError                           Traceback (most recent call last)
+Cell In[2], line 5
+      2 import requests
+      4 url = "https://raw.githubusercontent.com/karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt"
+----> 5 response = requests.get(url)
+      6 genome_data = response.text
+      8 # Split the data into lines and identify unique chromosomes
+
+File ~/.local/lib/python3.11/site-packages/requests/api.py:73, in get(url, params, **kwargs)
+     62 def get(url, params=None, **kwargs):
+     63     r"""Sends a GET request.
+     64 
+     65     :param url: URL for the new :class:`Request` object.
+   (...)
+     70     :rtype: requests.Response
+     71     """
+---> 73     return request("get", url, params=params, **kwargs)
+
+File ~/.local/lib/python3.11/site-packages/requests/api.py:59, in request(method, url, **kwargs)
+     55 # By using the 'with' statement we are sure the session is closed, thus we
+     56 # avoid leaving sockets open which can trigger a ResourceWarning in some
+     57 # cases, and look like a memory leak in others.
+     58 with sessions.Session() as session:
+---> 59     return session.request(method=method, url=url, **kwargs)
+
+File ~/.local/lib/python3.11/site-packages/requests/sessions.py:589, in Session.request(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)
+    584 send_kwargs = {
+    585     "timeout": timeout,
+    586     "allow_redirects": allow_redirects,
+    587 }
+    588 send_kwargs.update(settings)
+--> 589 resp = self.send(prep, **send_kwargs)
+    591 return resp
+
+File ~/.local/lib/python3.11/site-packages/requests/sessions.py:703, in Session.send(self, request, **kwargs)
+    700 start = preferred_clock()
+    702 # Send the request
+--> 703 r = adapter.send(request, **kwargs)
+    705 # Total elapsed time of the request (approximately)
+    706 elapsed = preferred_clock() - start
+
+File ~/.local/lib/python3.11/site-packages/requests/adapters.py:519, in HTTPAdapter.send(self, request, stream, timeout, verify, cert, proxies)
+    515     if isinstance(e.reason, _SSLError):
+    516         # This branch is for urllib3 v1.22 and later.
+    517         raise SSLError(e, request=request)
+--> 519     raise ConnectionError(e, request=request)
+    521 except ClosedPoolError as e:
+    522     raise ConnectionError(e, request=request)
+
+ConnectionError: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Max retries exceeded with url: /karlinarayberinger/karbytes_23AndMe_Ancestry_Data/main/karbytes_human_genome.txt (Caused by NewConnectionError(': Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+I am currently unable to access the file directly due to connectivity issues. However, you can manually inspect the file for unique chromosome identifiers by following these steps:
+
+    Open the File: Use a text editor or spreadsheet software to open the plain-text file.
+    Identify Chromosomes: Ignore lines starting with #, which are comments. Focus on the second column in the remaining lines.
+    Count Unique Chromosomes: The second column contains chromosome numbers. Count the distinct chromosome identifiers, which should include the numbers 1 through 22, and the letters X, Y, and possibly MT (mitochondrial DNA).
+
+This manual check will help you confirm whether the file depicts exactly 23 discrete chromosomes. If you encounter any difficulties or need further assistance, let me know!
+
+karbytes
+
+Thanks! This is useful information to know in case I want to beef up my skills in Python.
+
+ChatGPT
+
+You're welcome! If you have any more questions or need further assistance with Python or anything else, feel free to ask. Happy coding!
