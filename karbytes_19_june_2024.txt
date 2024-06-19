@@ -1,0 +1,47 @@
+/**
+ * file: karbytes_19_june_2024.txt
+ * type: plain-text
+ * date: 19_JUNE_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+(Note that the ChatGPT sessions depicted in this web page each used ChatGPT-4o).
+
+* * *
+
+// 11:00PM 17_JUNE_2024
+
+Hypothesis: all that is needed to verbatim reproduce exactly one chronologically linear sequence of subjectively experienced (first-hand) phenomena (from the brain of a living animal such as a human individual) is to record that animal's brain activity in the format of neural firings and the location coordinates in space-time at which those action potentials occurred (and to "replay" those digitized neural firing sequences on a computer whose hardware is a fusion of biological neurons and computer interfacing chips).
+
+In order to do that, the hardware in that subjectivity replay device would have to match the spatial configurations of the brain which produced (and experienced) the original neural firings (or else that replay device would need to artificially recreate the original neuron-to-neuron signal propagation times (because those  propagation times "encode" the spatial distance between neurons in the original experiencer of the brain recording's phenomena sequence)).
+
+* * *
+
+// 2:30PM 18_JUNE_2024
+
+karbytes
+
+Would my phone (which is using AT&T as its service provider) have Internet access on the moon?
+
+ChatGPT
+
+No, your phone using AT&T as its service provider would not have Internet access on the moon. Current mobile networks, including AT&T's, rely on terrestrial infrastructure like cell towers, which do not exist on the moon. While there are discussions and plans for future lunar communications networks, such as those involving satellites or dedicated lunar bases, these are not yet in place for standard mobile service. Therefore, without specific and specialized equipment, your phone would not be able to connect to the Internet on the moon.
+
+karbytes
+
+When (if ever) do you expect human civilization to encompass Mars and Earth simultaneously such that both planets have roughly the same human population sizes and standards of living?
+
+ChatGPT
+
+Predicting when human civilization might encompass both Mars and Earth with comparable population sizes and standards of living is highly speculative. However, here are some considerations based on current knowledge and technological trends:
+
+1. Technological Advancements: Significant advancements in space travel, habitat construction, and life support systems are required. SpaceX and NASA have plans to send humans to Mars within the next decade, but creating a sustainable and growing colony will take much longer.
+
+2. Economic Factors: Establishing and maintaining a colony on Mars would require substantial financial investment. The economic feasibility of such an endeavor would depend on factors like resource availability, technological breakthroughs, and international collaboration.
+
+3. Social and Political Will: Long-term colonization efforts will require strong political will and social support, as well as international cooperation. Policies, treaties, and regulations will need to be developed and agreed upon.
+
+4. Biological and Environmental Challenges: Mars poses significant challenges, including radiation exposure, low gravity, and a lack of breathable atmosphere. Overcoming these challenges will be crucial for long-term habitation.
+
+Given these factors, it's plausible that initial colonies on Mars might be established within the next few decades, but achieving parity in population size and standard of living with Earth would likely take centuries. A conservative estimate might place such an achievement several hundred years into the future, assuming continuous and sustained progress in the aforementioned areas.
