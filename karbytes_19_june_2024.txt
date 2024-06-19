@@ -6,9 +6,9 @@
  * license: PUBLIC_DOMAIN
  */
 
- image_url: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_16/main/mdisc_karbytes_complete_set_17june2024.jpg
+image_url: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_16/main/mdisc_karbytes_complete_set_17june2024.jpg
 
- (The M_DISC set depicted in the image referenced by the Uniform Resource Locator above this paragraph contains all the zip files which are enumerated on the web page of this website which is located at the following Uniform Resource Locator: https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_7/).
+(The M_DISC set depicted in the image referenced by the Uniform Resource Locator above this paragraph contains all the zip files which are enumerated on the web page of this website which is located at the following Uniform Resource Locator: https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_7/).
 
 (Note that the ChatGPT sessions depicted in this web page each used ChatGPT-4o).
 
@@ -16,9 +16,9 @@
 
 // 11:00PM 17_JUNE_2024
 
-Hypothesis: all that is needed to verbatim reproduce exactly one chronologically linear sequence of subjectively experienced (first-hand) phenomena (from the brain of a living animal such as a human individual) is to record that animal's brain activity in the format of neural firings and the location coordinates in space-time at which those action potentials occurred (and to "replay" those digitized neural firing sequences on a computer whose hardware is a fusion of biological neurons and computer interfacing chips).
+Hypothesis: all that is needed to verbatim reproduce exactly one chronologically linear sequence of subjectively experienced (first-hand) phenomena (from the brain of a living animal such as a human individual) is to record that animal’s brain activity in the format of neural firings and the location coordinates in space-time at which those action potentials occurred (and to “replay” those digitized neural firing sequences on a computer whose hardware is a fusion of biological neurons and computer interfacing chips).
 
-In order to do that, the hardware in that subjectivity replay device would have to match the spatial configurations of the brain which produced (and experienced) the original neural firings (or else that replay device would need to artificially recreate the original neuron-to-neuron signal propagation times (because those  propagation times "encode" the spatial distance between neurons in the original experiencer of the brain recording's phenomena sequence)).
+In order to do that, the hardware in that subjectivity replay device would have to match the spatial configurations of the brain which produced (and experienced) the original neural firings (or else that replay device would need to artificially recreate the original neuron-to-neuron signal propagation times (because those propagation times “encode” the spatial distance between neurons in the original experiencer of the brain recording’s phenomena sequence)).
 
 * * *
 
@@ -30,7 +30,7 @@ Would my phone (which is using AT&T as its service provider) have Internet acces
 
 ChatGPT
 
-No, your phone using AT&T as its service provider would not have Internet access on the moon. Current mobile networks, including AT&T's, rely on terrestrial infrastructure like cell towers, which do not exist on the moon. While there are discussions and plans for future lunar communications networks, such as those involving satellites or dedicated lunar bases, these are not yet in place for standard mobile service. Therefore, without specific and specialized equipment, your phone would not be able to connect to the Internet on the moon.
+No, your phone using AT&T as its service provider would not have Internet access on the moon. Current mobile networks, including AT&T’s, rely on terrestrial infrastructure like cell towers, which do not exist on the moon. While there are discussions and plans for future lunar communications networks, such as those involving satellites or dedicated lunar bases, these are not yet in place for standard mobile service. Therefore, without specific and specialized equipment, your phone would not be able to connect to the Internet on the moon.
 
 karbytes
 
@@ -48,5 +48,4 @@ Predicting when human civilization might encompass both Mars and Earth with comp
 
 4. Biological and Environmental Challenges: Mars poses significant challenges, including radiation exposure, low gravity, and a lack of breathable atmosphere. Overcoming these challenges will be crucial for long-term habitation.
 
-Given these factors, it's plausible that initial colonies on Mars might be established within the next few decades, but achieving parity in population size and standard of living with Earth would likely take centuries. A conservative estimate might place such an achievement several hundred years into the future, assuming continuous and sustained progress in the aforementioned areas.
-
+Given these factors, it’s plausible that initial colonies on Mars might be established within the next few decades, but achieving parity in population size and standard of living with Earth would likely take centuries. A conservative estimate might place such an achievement several hundred years into the future, assuming continuous and sustained progress in the aforementioned areas.
