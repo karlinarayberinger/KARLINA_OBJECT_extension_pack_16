@@ -58,4 +58,4 @@ karbytes_0: "One thing I can think of which money cannot buy more of is energy. 
 
 karbytes_1: "Do you have a portable solar panel in your backpack which you use to charge your electronics?"
 
-karbytes_0: "No, but I think it is very likely that someday in the future I will. (What I also think is very likely that someday in the future I will do is have a tattoo of my website's Uniform Resource Locator (URL) etched into the skin on the underside of my left forearm in black ink and in sans-serif font (and that URL is as follows: https://karlinaobject.wordpress.com/ )."
+karbytes_0: "No, but I think it is very likely that someday in the future I will. (What I also think is very likely that someday in the future I will do is have a tattoo of my website's Uniform Resource Locator (URL) etched into the skin on the underside of my left forearm in black ink and in sans-serif font (and that URL is as follows: https://karlinaobject.wordpress.com/ ))."
