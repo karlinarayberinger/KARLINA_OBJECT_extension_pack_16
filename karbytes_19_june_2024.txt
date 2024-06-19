@@ -6,6 +6,10 @@
  * license: PUBLIC_DOMAIN
  */
 
+ image_url: https://raw.githubusercontent.com/karlinarayberinger/KARLINA_OBJECT_extension_pack_16/main/mdisc_karbytes_complete_set_17june2024.jpg
+
+ (The M_DISC set depicted in the image referenced by the Uniform Resource Locator above this paragraph contains all the zip files which are enumerated on the web page of this website which is located at the following Uniform Resource Locator: https://karbytesforlifeblog.wordpress.com/mdisc_karbytes_ultra_2024_edition_7/).
+
 (Note that the ChatGPT sessions depicted in this web page each used ChatGPT-4o).
 
 * * *
@@ -45,3 +49,4 @@ Predicting when human civilization might encompass both Mars and Earth with comp
 4. Biological and Environmental Challenges: Mars poses significant challenges, including radiation exposure, low gravity, and a lack of breathable atmosphere. Overcoming these challenges will be crucial for long-term habitation.
 
 Given these factors, it's plausible that initial colonies on Mars might be established within the next few decades, but achieving parity in population size and standard of living with Earth would likely take centuries. A conservative estimate might place such an achievement several hundred years into the future, assuming continuous and sustained progress in the aforementioned areas.
+
