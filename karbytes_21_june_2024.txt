@@ -1,0 +1,13 @@
+/**
+ * file: karbytes_21_june_2024.txt
+ * type: plain-text
+ * date: 21_JUNE_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+karbytes_0: "Software is an interesting category of information. Not only are the unique objects of software existing only in 'a realm' which is abstract compared to what you and I refer to as 'the physical realm', but also, the entirety of software (specifically, the sequences of binary digits which verbatim encode exactly one piece of information) exists in both of those two realms simultaneously (when the software objects are instantiated as '(computer) meaningful' sequences comprised of some finite (natural) number of ones and zeroes in the form of specific molecular, atomic, and subatomic particle arrangements within the computer's 'solid state' (relatively unchanging) circuits) in some electronic (or photonic) computer's hardware)."
+
+karbytes_1: "If you can create a three-dimensional scan of each of the hardware (i.e. physical) components of a computer such that each molecule or atom (and perhaps even charge of molecules and atoms) is accounted for by that scan, then you can generate a (functional) software replica of an entire computer which those physical parts could be used to construct and use (in our physical realm). Hence, you can create a software application, X, which people like you and me can use in order to manipulate a virtual replica of a working computer whose entire hardware apparatus and collection of installed firmware and software (i. e. operating system (OS) and OS-dependent applications) is defined by X. Also, X could be installed on a virtual computer defined by X."
+
+karbytes_0: "What an interesting phenomenon! That sounds like attempting (and possibly succeeding at) creating a multiverse in which multiple universes interact with each other in a manner which I think is very analogous (if not identical) to us simply creating any software object (such as an integer variable for storing the value 5 in a C++ program runtime instance) using either a physical computer or a computer which exists as a virtual object in some software program which we are running on a hardware device."
