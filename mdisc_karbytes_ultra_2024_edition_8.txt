@@ -1,5 +1,3 @@
-
-
 /**
  * file: mdisc_karbytes_ultra_2024_edition_8.txt
  * type: plain-text
