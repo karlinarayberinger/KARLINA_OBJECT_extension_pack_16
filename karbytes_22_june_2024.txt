@@ -1,0 +1,15 @@
+/**
+ * file: karbytes_22_june_2024.txt
+ * type: plain-text
+ * date: 22_JUNE_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
+
+After making the most recent update to Karbytes For Life Blog dot WordPress dot Com (as of 12:30PM on 22_JUNE_2024), I noticed that the total number of gigabytes in karbytes_ultra_2024_edition_8 (which includes exclusively the folder named karbytes_ultra_2024_edition_8_core and the folder named karbytes_ultra_2024_edition_7_setup) was approximately 4.5 gigabytes (which is almost the entire data storage capacity of a 4.7 gigabyte M_DISC). 
+
+In order to prevent the unusually large zip file created by downloading all the files which are listed in the GitHub repository named raw_github_files_directory_KARLINA_OBJECT_extension_pack_16 from making karbytes_ultra_2024_edition_8 too large to burn to a single M_DISC, karbytes decided to revise the web page named mdisc_karbytes_ultra_2024_edition_8 of the aforementioned WordPress website such that the revised web page distributes the entire contents of the body of (public domain) intellectual property named karbytes (and referred to as karbytes according to the web page named ABOUT_KARBYTES of the aforementioned WordPress website) across three M_DISCs instead of two M_DISCs. 
+
+In summary, the revised collection of zip files named karbytes_ultra_2024_edition_8 no longer include the zip files listed in the folder named karbytes_ultra_2024_edition_7_setup (and the revised karbytes_ultra_2024_edition_8 collection contains zero sub folders and only the zip files listed in the folder named karbytes_ultra_2024_edition_8_core). 
+
+As of 12:30PM on 22_JUNE_2024, the entirety of karbytes is scheduled to (within the next 48 hours) be distributed across three separate M_DISC optical discs with mdisc_0 containing exclusively the files listed in the folder named karbytes_20march2024_journals, with mdisc_1 containing exclusively the files listed in the folder named karbytes_ultra_2024_edition_7 (which contains the aforementioned folder named karbytes_ultra_2024_edition_7_setup), and with mdisc_2 containing exclusively the files listed in the folder named karbytes_ultra_2024_edition_8.
