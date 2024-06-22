@@ -1,10 +1,10 @@
 /**
-* file: preparing_to_make_mdisc_set_on_19june2024.txt
-* type: plain-text
-* date: 22_JUNE_2024
-* author: karbytes
-* license: PUBLIC_DOMAIN
-*/
+ * file: preparing_to_make_mdisc_set_on_19june2024.txt
+ * type: plain-text
+ * date: 22_JUNE_2024
+ * author: karbytes
+ * license: PUBLIC_DOMAIN
+ */
 
 To Whom It May Concern:
 
