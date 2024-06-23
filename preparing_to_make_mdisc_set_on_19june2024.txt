@@ -1,5 +1,3 @@
-
-
 /**
  * file: preparing_to_make_mdisc_set_on_19june2024.txt
  * type: plain-text
