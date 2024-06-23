@@ -1,5 +1,7 @@
 // karbytes intends to add details later today
 
+// 12:30PM 23_JUNE_2024
+
 Where is cyberspace and how large of an area (in terms of spatial and temporal coordinates)?
 ChatGPT
 Cyberspace is a metaphorical concept rather than a physical space. It refers to the virtual environment created by interconnected digital networks, primarily the Internet, where data is stored, accessed, and communicated. Unlike physical spaces, cyberspace doesn't have physical dimensions or specific spatial coordinates.
