@@ -6,7 +6,7 @@
  * license: PUBLIC_DOMAIN
  */
 
-main_paragraph: The paragraphs dispensed in this paragraph are considered by their author to be their author "clearing the cache" of the author's working memory. Bewarned that herein these words lie potential junk information (i.e. statements which communicate only a negligible degree of truthfulness or usefulness).
+main_paragraph: The paragraphs dispensed in this plain-text note file are considered by their author to be their author "clearing the cache" of the author's working memory. Bewarned that herein these words lie potential junk information (i.e. statements which communicate only a negligible degree of truthfulness or usefulness).
 
 * * *
 
@@ -32,4 +32,4 @@ The neutrality of nature is oftentimes seen and sought as refuge from the condit
 
 (I generally and colloquially (out of habit (and fear of being punished by the most ardent and socioeconomically empowered mongers of militant anthropocentrisim)) use the terms "people" and "humans" interchangeably).
 
-The paragraphs dispensed in this paragraph are considered by their author to be their author "clearing the cache" of the author's working memory. Bewarned that herein these words lie potential junk information (i.e. statements which communicate only a negligible degree of truthfulness or usefulness).
+The paragraphs dispensed in this plain-text note file are considered by their author to be their author "clearing the cache" of the author's working memory. Bewarned that herein these words lie potential junk information (i.e. statements which communicate only a negligible degree of truthfulness or usefulness).
